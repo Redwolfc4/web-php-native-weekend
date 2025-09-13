@@ -5,16 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-    <h1>Login Page</h1>
-    <label>email</label><br>
-    <input type="email" name="email" id="email"><br>
-    <label>password</label><br>
-    <input type="password" name="password" id="password"> <br>
-    <input type="button" value="submit">
-    <button type="submit">Submit</button>
+    <div id="login-box">
+        <h1 class="text-center">Login Page</h1>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+
+
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+
+        <div id="event">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </div>
+
+    </div>
+
 </body>
+
+<script>
+    document.addEventListener('click', function (e) {
+        console.log(e.target.id)
+    })
+</script>
 
 </html>
